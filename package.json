@@ -47,7 +47,7 @@
     "build:server": "babel server --out-dir build/server",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "ssr": "npm run build && node build/server/index.js"
+    "ssr": "node ./server/index.js"
   },
   "eslintConfig": {
     "extends": [

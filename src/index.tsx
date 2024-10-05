@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { store } from './store/store';
 
 const rootElement = document.getElementById('root') as Document | Element;
-if(rootElement && typeof(rootElement) !== "object"){
+if(rootElement){
   ReactDOM.hydrateRoot( rootElement, 
     <React.StrictMode>
       <BrowserRouter>
@@ -19,20 +19,22 @@ if(rootElement && typeof(rootElement) !== "object"){
     </React.StrictMode>
 
     );
-}else{
-  const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
-  );
-  root.render(
-    <React.StrictMode>
-      <Provider store={store}>
-        <BrowserRouter>
-         <App />
-       </BrowserRouter>
-      </Provider>
-    </React.StrictMode>
-  );
 }
+
+// else{
+//   const root = ReactDOM.createRoot(
+//     document.getElementById('root') as HTMLElement
+//   );
+//   root.render(
+//     <React.StrictMode>
+//       <Provider store={store}>
+//         <BrowserRouter>
+//          <App />
+//        </BrowserRouter>
+//       </Provider>
+//     </React.StrictMode>
+//   );
+// }
 
 
 // If you want to start measuring performance in your app, pass a function
