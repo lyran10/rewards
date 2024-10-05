@@ -4,9 +4,9 @@ import fs from "fs"
 import path from "path"
 import { Provider } from 'react-redux';
 import {StaticRouter} from "react-router-dom/server"
-import App from "../src/App.tsx"
+import App from "../src/App"
 import { renderToString } from "react-dom/server"
-import { store } from "../src/store/store.tsx";
+import { store } from "../src/store/store";
 
 // const PORT = process.env.REACT_APP_PORT; 
 // console.log(PORT)

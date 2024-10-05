@@ -13,6 +13,7 @@ import {Route, Routes} from "react-router-dom"
 // https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js
 // testuser
 // test@123
+// react-scripts start
 const App = () => {
   return (
     // <Auth/>
