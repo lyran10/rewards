@@ -8,6 +8,8 @@ import App from "../src/App.tsx"
 import { renderToString } from "react-dom/server"
 import { store } from "../src/store/store.tsx";
 
+// const PORT = process.env.REACT_APP_PORT; 
+// console.log(PORT)
 const app = express()
 
 app.use("^/$", (req,res) => {
@@ -79,5 +81,5 @@ console.log(req.url)
 })
 
 app.listen(5000,() => {
-  console.log("running 5000")
+  console.log(`running ${5000}`)
 })
