@@ -7,19 +7,19 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 
-// const rootElement = document.getElementById('root') as Document | Element;
-// if(rootElement){
-//   ReactDOM.hydrateRoot( rootElement, 
-//     <React.StrictMode>
-//       <BrowserRouter>
-//       <Provider store={store}>  
-//        <App/>
-//       </Provider>
-//     </BrowserRouter>
-//     </React.StrictMode>
+const rootElement = document.getElementById('root') as Document | Element;
+if(rootElement){
+  ReactDOM.hydrateRoot( rootElement, 
+    <React.StrictMode>
+      <BrowserRouter>
+      <Provider store={store}>  
+       <App/>
+      </Provider>
+    </BrowserRouter>
+    </React.StrictMode>
 
-//     );
-// }
+    );
+}
 
 // else{
 //   const root = ReactDOM.createRoot(
