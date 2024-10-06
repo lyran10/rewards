@@ -42,7 +42,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build:client && npm run build:server",
+    "build": "npm run build:client",
     "build:client": "react-scripts build",
     "build:server": "babel server --out-dir build/server",
     "test": "react-scripts test",
